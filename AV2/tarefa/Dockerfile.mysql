@@ -1,0 +1,11 @@
+# Use a imagem base do MySQL
+FROM mysql:8.0
+
+# Defina variáveis de ambiente para o MySQL
+ENV MYSQL_USER=admin
+ENV MYSQL_PASSWORD=1234
+ENV MYSQL_DATABASE=spring_login
+ENV MYSQL_ROOT_PASSWORD=1234
+
+# Exponha a porta que o MySQL irá usar
+EXPOSE 3306
